@@ -1,0 +1,89 @@
+@model List<WebAppsHaveHotKeysToo.Models.Song>
+@{
+	ViewBag.Title = "Web Apps Have Hot Keys Too!";
+}
+
+@section featured {
+<section class="featured">
+    <div class="content-wrapper" style="color: black; font-size: 1.25em;">
+        <hgroup class="title">
+            <h1>@ViewBag.Title</h1>
+        </hgroup>
+		<p>
+			Here's a simple example of using hotkeys (and the associated <a href="@Url.Content("~/js/jQuery.hotKeyMap-1.0.js")">jQuery mapHotKeys plugin</a>).<br/>
+			Download this website with source: <a href="@Url.Content("~/Content/WebAppsHaveHotKeysTooSample-MichaelKennedy-v1.zip")">WebAppsHaveHotKeysTooSample-MichaelKennedy-v1.zip</a>
+		</p>
+		<table>
+			<tr>
+				<td style="min-width: 180px;">Hide sidebar pane</td>
+				<td style="font-weight:bold;">p + h</td>
+				<td>(press 'p' then press 'h')</td>
+				<td>Go Home</td>
+				<td style="font-weight: bold;">g + h</td>
+			</tr>
+			<tr>
+				<td>Show sidebar pane</td>
+				<td style="font-weight: bold;">p + s</td>
+				<td>(press 'p' then press 's')</td>
+				<td>Go to Contacts</td>
+				<td style="font-weight: bold;">g + c</td>
+			</tr>
+
+			<tr>
+				<td>Add a new song</td>
+				<td style="font-weight: bold;">ctrl - a</td>
+				<td>(press 'ctrl' and 'a' at the same time) &nbsp; &nbsp; &nbsp; </td>
+				<td>Go to About</td>
+				<td style="font-weight: bold;">g + a</td>
+			</tr>
+		</table>
+    </div>
+</section>
+}
+
+@*<h2>The Sample App:</h2>*@
+<section style="position: relative; min-height: 300px;">
+	<div id="sideBar">
+		<h2>Nav Options</h2>
+		<div>NAV 1</div>
+		<div>NAV 2</div>
+		<div>NAV 3</div>
+		<div>NAV 4</div>
+		<div>NAV 5</div>
+		<div>NAV 6</div>
+		<div>NAV 7</div>
+		<div style="color: gray;">(show / hide with hotkeys)</div>
+	</div>
+
+	<div id="mainContentArea">
+		<h2>Our Songs 
+			<span style="color: gray; font-size: 12px; font-weight: normal;">(add new with ctrl+a)</span>
+		</h2>
+		<p>
+			Start meaningless intro... In the context of popular music, a ballad is usually a slow song dealing with either
+			romance or an emotional occasion. The Merriam-Webster dictionary offers a broader
+			interpretation, defining ...
+		</p>
+		@using (Html.BeginForm())
+		{
+			@Html.ValidationSummary()
+			<div id="addSong">
+				<h3>Add a New Song</h3>
+				@Html.TextBox("Name", "", new {placeholder = " song title"})<br />
+
+				@Html.TextBox("Duration", "", new {placeholder = " duration (in sec)"})<br />
+				<input id="Submit1" type="submit" value="Add Song" />
+				<br />
+			</div>
+		}
+		@foreach (var song in Model)
+		{
+			<div>
+				<div style="display: inline-block; min-width: 200px; color: navy; font-weight: bold; font-size: 1.25em;">
+				@song.Name 
+			</div>
+			<span style="color: gray;">@song.Duration sec</span>
+		</div>
+		}
+	</div>
+</section>
