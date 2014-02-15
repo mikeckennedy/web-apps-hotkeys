@@ -14,5 +14,14 @@ See it live here:
 
 Get the plugin here:
 
-[]()
+[https://github.com/mikeckennedy/web-apps-hotkeys/tree/master/src/jslib](https://github.com/mikeckennedy/web-apps-hotkeys/tree/master/src/jslib)
+
+jQuery.hotKeyMap.js is jQuery plugin that allows you to add complex hot-key 
+functionality and navigation to your web apps with very little effort.
+
+It's built on top of John Resig's jQuery.hotKeys. His plugin is great 
+(as you'd expect), but as far as I know doesn't support complex series of keys. 
+For example, if you want to GMail style navigation (press 'g' then press 't' 
+to go to sent mail), that's fairly difficult using his plugin. Here's how you 
+accomplish this with my plugin:
 
