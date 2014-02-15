@@ -122,7 +122,6 @@
     <Content Include="js\jQuery.hotKeyMap-1.0.min.js.map">
       <DependentUpon>jQuery.hotKeyMap-1.0.min.js</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\michael-kennedy-slow-web-apps-demo.pubxml" />
     <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />
@@ -177,7 +176,6 @@
   <ItemGroup>
     <Content Include="Content\WebAppsHaveHotKeysTooSample-MichaelKennedy-v1.zip" />
     <Content Include="packages.config" />
-    <None Include="Properties\PublishProfiles\file.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
