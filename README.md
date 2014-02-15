@@ -1,4 +1,4 @@
-web-apps-hotkeys
+Web apps hot keys jQuery plugin
 ================
 
 This project manages my jQuery HotKeys for web apps plugin which is described in these 
