@@ -1,0 +1,17 @@
+{
+  "name": "jquery.hotkeysmap",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mikeckennedy/web-apps-hotkeys",
+  "authors": [
+    "Mike Kennedy"
+  ],
+  "description": "jQuery.hotKeyMap.js is jQuery plugin that allows you to add complex hot-key functionality and navigation to your web apps with very little effort.",
+  "main": "src/jslib/jQuery.hotKeyMap-1.0.js",
+  "keywords": [
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "src/sample"
+  ]
+}
