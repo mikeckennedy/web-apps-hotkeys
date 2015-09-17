@@ -7,14 +7,15 @@ blog posts:
 * [http://blog.michaelckennedy.net/2012/03/15/add-hot-keys-to-web-apps-with-this-jquery-plugin/](http://blog.michaelckennedy.net/2012/03/15/add-hot-keys-to-web-apps-with-this-jquery-plugin/)
 * [http://blog.michaelckennedy.net/2012/04/04/no-you-dont-need-a-windows-app/](http://blog.michaelckennedy.net/2012/04/04/no-you-dont-need-a-windows-app/)
 
-
 See it live here:
 
 [http://web-apps-hotkeys.azurewebsites.net/](http://web-apps-hotkeys.azurewebsites.net/)
 
 Get the plugin here:
 
-[https://github.com/mikeckennedy/web-apps-hotkeys/tree/master/src/jslib](https://github.com/mikeckennedy/web-apps-hotkeys/tree/master/src/jslib)
+**Bower**: bower install jquery.hotkeysmap
+
+**Download**: [https://github.com/mikeckennedy/web-apps-hotkeys/tree/master/src/jslib](https://github.com/mikeckennedy/web-apps-hotkeys/tree/master/src/jslib)
 
 jQuery.hotKeyMap.js is jQuery plugin that allows you to add complex hot-key 
 functionality and navigation to your web apps with very little effort.
