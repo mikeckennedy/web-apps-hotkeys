@@ -13,7 +13,7 @@ See it live here:
 
 Get the plugin here:
 
-**Bower**: bower install jquery.hotkeysmap
+**Bower**: `bower install jquery.hotkeysmap`
 
 **Download**: [https://github.com/mikeckennedy/web-apps-hotkeys/tree/master/src/jslib](https://github.com/mikeckennedy/web-apps-hotkeys/tree/master/src/jslib)
 
