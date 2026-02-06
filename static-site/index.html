@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Web Apps Have Hot Keys Too! - A Sample by Michael Kennedy</title>
+		<link href="css/site.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/jQuery.externalLinks-1.0.js"></script>
+		<script type="text/javascript" src="js/jquery.hotkeys-0.8.js"></script>
+		<script type="text/javascript" src="js/jQuery.hotKeyMap-1.0.js"></script>
+		<script type="text/javascript" src="js/site.js"></script>
+		<meta name="viewport" content="width=device-width" />
+		<style type="text/css">
+			.navKey { }
+			.github-ribbon {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 100;
+				width: 149px;
+				height: 149px;
+				overflow: hidden;
+			}
+			.github-ribbon a {
+				display: block;
+				width: 200px;
+				padding: 6px 0;
+				background-color: #121621;
+				color: #fff !important;
+				text-align: center;
+				font-size: 13px;
+				font-weight: bold;
+				text-decoration: none !important;
+				transform: rotate(-45deg);
+				position: absolute;
+				top: 35px;
+				left: -30px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+			}
+			.github-ribbon a:hover {
+				background-color: #333 !important;
+			}
+		</style>
+	</head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+					<p class="site-title"><a href="https://mkennedy.codes/">A Sample by Michael Kennedy</a></p>
+                </div>
+                <div class="float-right">
+					<section id="login">
+						<br/>
+					</section>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            <section class="featured">
+	<div class="content-wrapper" style="color: black; font-size: 1.25em;">
+		<div class="github-ribbon">
+			<a href="https://github.com/mikeckennedy/web-apps-hotkeys">Fork me on GitHub</a>
+		</div>
+		<hgroup class="title">
+			<h1>Web Apps Have Hot Keys Too!</h1>
+		</hgroup>
+		<p>
+			Here's a simple example of using hotkeys (and the associated <a href="https://github.com/mikeckennedy/web-apps-hotkeys">jQuery mapHotKeys plugin</a>).<br/>
+			Download this website with source from GitHub: <a href="https://github.com/mikeckennedy/web-apps-hotkeys">https://github.com/mikeckennedy/web-apps-hotkeys</a>
+		</p>
+		<table>
+			<tr>
+				<td style="min-width: 180px;">Hide sidebar pane</td>
+				<td style="font-weight:bold;">p + h</td>
+				<td>(press 'p' then press 'h')</td>
+				<td>Go Home</td>
+				<td style="font-weight: bold;">g + h</td>
+			</tr>
+			<tr>
+				<td>Show sidebar pane</td>
+				<td style="font-weight: bold;">p + s</td>
+				<td>(press 'p' then press 's')</td>
+				<td>Go to Contacts</td>
+				<td style="font-weight: bold;">g + c</td>
+			</tr>
+			<tr>
+				<td>Add a new song</td>
+				<td style="font-weight: bold;">ctrl - a</td>
+				<td>(press 'ctrl' and 'a' at the same time) &nbsp; &nbsp; &nbsp; </td>
+				<td>Go to About</td>
+				<td style="font-weight: bold;">g + a</td>
+			</tr>
+		</table>
+	</div>
+</section>
+            <section class="content-wrapper main-content clear-fix">
+                <section style="position: relative; min-height: 300px;">
+	<div id="sideBar">
+		<h2>Nav Options</h2>
+		<div>NAV 1</div>
+		<div>NAV 2</div>
+		<div>NAV 3</div>
+		<div>NAV 4</div>
+		<div>NAV 5</div>
+		<div>NAV 6</div>
+		<div>NAV 7</div>
+		<div style="color: gray;">(show / hide with hotkeys)</div>
+	</div>
+
+	<div id="mainContentArea">
+		<h2>Our Songs
+			<span style="color: gray; font-size: 12px; font-weight: normal;">(add new with ctrl+a)</span>
+		</h2>
+		<p>
+			Start meaningless intro... In the context of popular music, a ballad is usually a slow song dealing with either
+			romance or an emotional occasion. The Merriam-Webster dictionary offers a broader
+			interpretation, defining ...
+		</p>
+		<form>
+			<div id="addSong">
+				<h3>Add a New Song</h3>
+				<input type="text" name="Name" placeholder=" song title" /><br />
+				<input type="text" name="Duration" placeholder=" duration (in sec)" /><br />
+				<input id="Submit1" type="submit" value="Add Song" />
+				<br />
+			</div>
+		</form>
+		<div>
+			<div style="display: inline-block; min-width: 200px; color: navy; font-weight: bold; font-size: 1.25em;">
+				Yesterday
+			</div>
+			<span style="color: gray;">125 sec</span>
+		</div>
+		<div>
+			<div style="display: inline-block; min-width: 200px; color: navy; font-weight: bold; font-size: 1.25em;">
+				Wish You Were Here
+			</div>
+			<span style="color: gray;">315 sec</span>
+		</div>
+		<div>
+			<div style="display: inline-block; min-width: 200px; color: navy; font-weight: bold; font-size: 1.25em;">
+				Stairway to Heaven
+			</div>
+			<span style="color: gray;">482 sec</span>
+		</div>
+	</div>
+</section>
+            </section>
+        </div>
+		<footer>
+			<div class="content-wrapper">
+				<div class="float-left">
+					<p>&copy; 2026 - <a href="https://mkennedy.codes/">Michael Kennedy</a></p>
+				</div>
+				<div class="float-right">
+					<ul id="social">
+						<li><a href="http://twitter.com/mkennedy" class="twitter">Twitter</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<input type="hidden" id="homeKey" class="navKey" data-url="index.html" data-key="h" />
+		<input type="hidden" id="aboutKey" class="navKey" data-url="about.html" data-key="a" />
+		<input type="hidden" id="contactKey" class="navKey" data-url="contact.html" data-key="c" />
+	</body>
+</html>
